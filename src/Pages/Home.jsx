@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Card from '../Components/Card'
 
 const Home = () => {
     const [recipes, setRecipes] = useState([])
@@ -14,13 +15,7 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Home</h1>
-            {recipes.map(recipe => (
-                <div key={recipe.id}>
-                    <h3>{recipe.title}</h3>
-                    <img src={recipe.image} alt="" />
-                </div>
-            ))}
+            {recipes.map(recipe => <Card key={recipe.id} recipe={recipe}/>)}
         </div>
     )
 }
