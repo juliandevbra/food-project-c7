@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import LoginForm from './Components/LoginForm'
 import Navbar from './Components/Navbar'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
@@ -12,6 +13,7 @@ function App() {
   
   return (
     <div className="App">
+      <LoginForm/>
       <Navbar/>
       <h1>Bienvenidos al recetario DH</h1>
       <Routes>
