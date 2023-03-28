@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useRecipeStates } from '../Context/RecipeContext'
 
-const RecipeDetail = ({recipes}) => {
-
+const RecipeDetail = () => {
+    const {recipes} = useRecipeStates()
     const params = useParams()
 
     const recipeSelected = recipes.find((recipe) => params.id == recipe.id)
