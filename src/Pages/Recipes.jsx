@@ -8,10 +8,12 @@ const Recipes = () => {
   const {recipes} = useRecipeStates()
 
   return (
-    <div>
-      <h2>Lista de recetas random</h2>
+    <>
+    <h2>Lista de recetas random</h2>
+    <div className='list-container'>
         {recipes.map(recipe => <Link key={recipe.id} to={'/recipe/' + recipe.id}><Card  recipe={recipe}/></Link>)}
     </div>
+    </>
   )
 }
 

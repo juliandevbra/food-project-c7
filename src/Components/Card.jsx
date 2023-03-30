@@ -5,6 +5,7 @@ const Card = ({recipe}) => {
     <div className='card'>
         <h4>{recipe.title}</h4>
         <img src={recipe.image} alt="" className='card-img'/>
+        <button>Ver detalle</button>
     </div>
 
   )

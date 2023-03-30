@@ -5,7 +5,7 @@ const RecipeStates = createContext()
 const Context = ({children}) => {
     const [recipes, setRecipes] = useState([])
     const [auth, setAuth] = useState(true)
-    const url = 'https://api.spoonacular.com/recipes/random?number=10&apiKey=68d481a0fbc340308fbf934f836ee8c6'
+    const url = 'https://api.spoonacular.com/recipes/random?number=12&apiKey=68d481a0fbc340308fbf934f836ee8c6'
 
     useEffect(() => {
         fetch(url)
