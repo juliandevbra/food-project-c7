@@ -9,10 +9,10 @@ const Recipes = () => {
 
   return (
     <>
-    <h2>Lista de recetas random</h2>
-    <div className='list-container'>
-        {recipes.map(recipe => <Link key={recipe.id} to={'/recipe/' + recipe.id}><Card  recipe={recipe}/></Link>)}
-    </div>
+      <h2>Lista de recetas random</h2>
+      <div className='list-container'>
+          {recipes.map(recipe => <Link key={recipe.id} to={'/recipe/' + recipe.id}><Card  recipe={recipe}/></Link>)}
+      </div>
     </>
   )
 }

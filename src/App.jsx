@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import Counter from './Clase 21/Counter'
+import UserList from './Clase 21/UserList'
 import Deserts from './Components/Deserts'
 import LoginForm from './Components/LoginForm'
 import Navbar from './Components/Navbar'
@@ -20,7 +22,9 @@ function App() {
   const {token} = useRecipeStates()
   return (
     <div className="App">
-     {!token ? null : <Navbar/>} 
+      {/* <Counter/> */}
+      <UserList/>
+     {/* {!token ? null : <Navbar/>} 
       <Routes>
         {!token
         ? 
@@ -42,7 +46,7 @@ function App() {
           </>
         }
         
-      </Routes>
+      </Routes> */}
     </div> 
   )
 }
